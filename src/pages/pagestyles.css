@@ -1,0 +1,46 @@
+.text{
+    font-size: xx-large;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    margin-top: 4%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.text-contained{
+    font-size: xx-large;
+    font-weight: 800;
+    margin-top: 2%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.vote-button{
+    padding: 1rem;
+	 font-family: inherit;
+	 font-weight: bold;
+	 font-size: 1rem;
+	 margin: 1rem;
+	 border: 2px solid #d50000;
+	 background: transparent;
+	 color: #d50000;
+	 border-radius: 0.2rem;
+	 transition: background 200ms ease-in, color 200ms ease-in;
+
+}
+
+.vote-button:hover{
+    color: white;
+    transform: scale(1.01);
+    background-color: #d50000
+    
+}
+
+.vote-button:disabled{
+    color: aliceblue;
+    border-color: aliceblue;
+    pointer-events: none;
+    
+}
