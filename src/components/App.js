@@ -21,33 +21,28 @@ import Result from "./Result";
 function App() {
   return (
     <>
-      <Container className='d-flex align-items-center justify-content-center'>
-        <div className='w-100' style={{ maxWidth: "100vw" }}>
-          <Router>
-            <NavBar />
-            <AuthProvider>
-              <Switch>
-                <PrivateRoute exact path='/' component={Dashboard} />
-                <PrivateRoute
-                  path='/update-profile'
-                  component={UpdateProfile}
-                />
-                <Route path='/signup' component={Signup} />
-                <Route path='/login' component={Login} />
-                <Route path='/forgot-password' component={ForgotPassword} />
-                <Route path='/Navbar' component={Navbar} />
-                <Route path='/reports' component={Reports} />
-                <Route path='/chat' component={LiveChat} />
-                <Route path='/candidates' component={candidates} />
-                <Route path='/list' component={List} />
-                <Route path='/mechanical' component={Mechanical} />
-                <Route path='/club' component={Club} />
-                <Route path='/result' component={Result} />
-              </Switch>
-            </AuthProvider>
-          </Router>
-        </div>
-      </Container>
+      <div className='w-100 ' style={{ maxWidth: "100vw" }}>
+        <Router>
+          <NavBar />
+          <AuthProvider>
+            <Switch>
+              <PrivateRoute exact path='/' component={Dashboard} />
+              <PrivateRoute path='/update-profile' component={UpdateProfile} />
+              <Route path='/signup' component={Signup} />
+              <Route path='/login' component={Login} />
+              <Route path='/forgot-password' component={ForgotPassword} />
+              <Route path='/Navbar' component={Navbar} />
+              <Route path='/reports' component={Reports} />
+              <Route path='/chat' component={LiveChat} />
+              <Route path='/candidates' component={candidates} />
+              <Route path='/list' component={List} />
+              <Route path='/mechanical' component={Mechanical} />
+              <Route path='/club' component={Club} />
+              <Route path='/result' component={Result} />
+            </Switch>
+          </AuthProvider>
+        </Router>
+      </div>
     </>
   );
 }

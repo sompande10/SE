@@ -8,3 +8,9 @@
   width: 100%;
   margin-top: "50vh";
 }
+
+.loginform {
+  position: absolute;
+  max-width: 50%;
+  margin-left: 25%;
+}
